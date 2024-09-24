@@ -1,125 +1,118 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    
 }
 
-body{
+body {
     font-size: 100%;
     background: white;
     font-family: Arial, Helvetica, sans-serif;
 }
 
-header{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #0046CB;
-  padding:0px 20px;
-  width: auto;
-  color:white;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 36px;
-  align-items: center;
-  text-align: center;
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0046CB;
+    padding: 0px 20px;
+    width: auto;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    flex-wrap: wrap;
+    text-align: center;
 }
 
-.titleEOL{
+.titleEOL {
     background-color: #0046CB;
 }
 
-.titleL6{
+.titleL6 {
     background-color: #FD8F40;
 }
 
-.titleGZ{
+.titleGZ {
     background-color: #0C714F;
 }
 
 @keyframes anima {
-    0%{
+    0% {
         transform: scale(1);
     }
     100% {
         transform: scale(1.06);
     }
-  }
-  
-a.backEol{
+}
+
+a.backEol {
     background-color: #0046CB;
 }
 
-a.backL6{
+a.backL6 {
     background-color: #FD8F40;
 }
-a.backGZ{
-    background-color:#0C714F;
+
+a.backGZ {
+    background-color: #0C714F;
 }
 
-
-.container{
-    font-size: 20px; 
-    color: #000; 
-    font-weight: bold; 
+.container {
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
     text-align: center;
     justify-content: center;
     display: flex;
     align-items: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    text-align: center;
+    flex-direction:row;
     width: 80%;
-   }
+}
 
-.container:hover{
+.container:hover {
     animation-name: anima;
     animation-duration: 0.5s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-direction: alternate;
-   }
-    
+}
 
-label{
-    width: 221px; 
-    height: 21px; 
-    top: 142px; 
+label {
+    width: 221px;
+    height: 21px;
+    top: 142px;
     position: absolute;
-    text-align: center; 
-    color: black; 
-    font-size: 32px; 
-    font-family: Arial, Helvetica, sans-serif; 
-    font-weight: 600; 
+    text-align: center;
+    color: black;
+    font-size: 32px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
     word-wrap: break-word;
 }
 
-.sectorchoice{
-  font-weight: bold; 
-  color:rgb(0, 0, 0);
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 60.05px;
-  text-align: center;
-  padding:24px;
+.sectorchoice {
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 60.05px;
+    text-align: center;
+    padding: 24px;
 }
 
-.imgkc{
-    margin: 10px; 
-    padding:10; 
-    height: 100vh; 
-    display: flex; 
-    height: 72px; 
-    position: absolute; 
-    bottom:0; 
-    left:0; 
-    display:flex-end; 
-    justify-content: end
+.imgkc {
+    margin: 10px;
+    padding: 10;
+    height: 100vh;
+    display: flex;
+    height: 72px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    justify-content: end;
 }
 
-a.help{
+a.help {
     position: fixed;
     bottom: 10px;
     right: 10px;
@@ -134,7 +127,7 @@ a.help{
     font-size: 24px;
 }
 
-.backEol,.backL6,.backGZ{
+.backEol, .backL6, .backGZ {
     position: fixed;
     bottom: 10px;
     right: 10px;
@@ -146,22 +139,22 @@ a.help{
     border-radius: 5px;
     align-items: center;
     font-size: 24px;
-   
 }
 
-/* centralizando os círculos */
 .circle-choices {
     display: flex;
     justify-content: center;
     gap: 50px;
     margin-top: 50px;
+    position: relative;
+    align-items: center;
+    left: 50vh;
 }
 
 .circleEol, .circleL6, .circleGZ {
     width: 246px;
     height: 226px;
     border-radius: 9999px;
-    position: relative;
 }
 
 .Eol {
@@ -201,7 +194,7 @@ a.help{
     font-weight: 600;
 }
 
-.circleEol:hover,.circleL6:hover,.circleGZ:hover{
+.circleEol:hover, .circleL6:hover, .circleGZ:hover {
     animation-name: anima;
     animation-duration: 0.5s;
     animation-timing-function: ease-in-out;
@@ -213,7 +206,43 @@ footer {
     display: flex;
     align-items: center;
     padding: 20px;
-
 }
 
- 
+.main-section {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+@media (max-width: 1200px) {
+    .circle-choices {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .circleEol, .circleL6, .circleGZ {
+        width: 200px;
+        height: 180px;
+    }
+
+    .textEOL, .textL6, .textGZ {
+        font-size: 36px;
+    }
+}
+
+@media (max-width: 768px) {
+    header, .circle-choices {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .circleEol, .circleL6, .circleGZ {
+        width: 150px;
+        height: 130px;
+    }
+
+    .textEOL, .textL6, .textGZ {
+        font-size: 24px;
+    }
+}
