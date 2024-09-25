@@ -66,8 +66,7 @@ a.backGZ {
     justify-content: center;
     display: flex;
     align-items: center;
-    flex-direction:row;
-    width: 80%;
+    flex-direction: column;
 }
 
 .container:hover {
@@ -79,16 +78,19 @@ a.backGZ {
 }
 
 label {
-    width: 221px;
-    height: 21px;
-    top: 142px;
-    position: absolute;
     text-align: center;
     color: black;
     font-size: 32px;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 600;
-    word-wrap: break-word;
+    padding:10px;
+    margin-top: 10px;
+    margin-left:0px;
+    margin-right:-70px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 5px;
 }
 
 .sectorchoice {
@@ -106,9 +108,9 @@ label {
     height: 100vh;
     display: flex;
     height: 72px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    position:fixed;
+    bottom: 10px;
+    left: 10px;
     justify-content: end;
 }
 
@@ -148,7 +150,6 @@ a.help {
     margin-top: 50px;
     position: relative;
     align-items: center;
-    left: 50vh;
 }
 
 .circleEol, .circleL6, .circleGZ {
@@ -209,10 +210,12 @@ footer {
 }
 
 .main-section {
-    display: flex;
-    flex-wrap: wrap;
-    
-}
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-around;
+        margin:0px;
+    }
 
 @media (max-width: 1200px) {
     .circle-choices {
