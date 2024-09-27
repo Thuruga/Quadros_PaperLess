@@ -7,9 +7,9 @@
 
 body {
     font-size: 100%;
-    background: white;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 
 header {
     display: flex;
@@ -23,74 +23,6 @@ header {
     font-size: 36px;
     flex-wrap: wrap;
     text-align: center;
-}
-
-.titleEOL {
-    background-color: #0046CB;
-}
-
-.titleL6 {
-    background-color: #FD8F40;
-}
-
-.titleGZ {
-    background-color: #0C714F;
-}
-
-@keyframes anima {
-    0% {
-        transform: scale(1);
-    }
-    100% {
-        transform: scale(1.06);
-    }
-}
-
-a.backEol {
-    background-color: #0046CB;
-}
-
-a.backL6 {
-    background-color: #FD8F40;
-}
-
-a.backGZ {
-    background-color: #0C714F;
-}
-
-.container {
-    font-size: 20px;
-    color: #000;
-    font-weight: bold;
-    text-align: center;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
-.container:hover {
-    animation-name: anima;
-    animation-duration: 0.5s;
-    animation-timing-function: ease-in-out;
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
-}
-
-label {
-    text-align: center;
-    color: black;
-    font-size: 32px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 600;
-    padding:10px;
-    margin-top: 10px;
-    margin-left:0px;
-    margin-right:-70px;
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-column-gap: 20px;
-    grid-row-gap: 5px;
 }
 
 .sectorchoice {
@@ -121,20 +53,6 @@ a.help {
     width: auto;
     text-decoration: none;
     background-color: #0046CB;
-    color: white;
-    margin: 10px;
-    padding: 10px;
-    border-radius: 5px;
-    align-items: center;
-    font-size: 24px;
-}
-
-.backEol, .backL6, .backGZ {
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    width: auto;
-    text-decoration: none;
     color: white;
     margin: 10px;
     padding: 10px;
@@ -195,6 +113,15 @@ a.help {
     font-weight: 600;
 }
 
+@keyframes anima {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.06);
+    }
+}
+
 .circleEol:hover, .circleL6:hover, .circleGZ:hover {
     animation-name: anima;
     animation-duration: 0.5s;
@@ -208,14 +135,6 @@ footer {
     align-items: center;
     padding: 20px;
 }
-
-.main-section {
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        justify-content: space-around;
-        margin:0px;
-    }
 
 @media (max-width: 1200px) {
     .circle-choices {
@@ -249,3 +168,4 @@ footer {
         font-size: 24px;
     }
 }
+
