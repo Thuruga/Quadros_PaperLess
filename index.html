@@ -3,54 +3,207 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Quadro Interativo Paperless</title>
-    <link rel="stylesheet" type="text/css" href="styleIndex.css">
-    <link rel="icon" href="KC_ABA.png" type="image/x-icon">
-</head>
-    </style>
+    <meta name="Description" content="Um novo conceito de QI">
+    <title>Quadro Interativo FB-12</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+   
 </head>
 
 <body>
-
-<header>
-    <h1>Quadro Interativo Paperless</h1>
-</header>
-
-<nav>  
-    <p class="sectorchoice" style="color: #000000;">Escolha o setor desejado:</p>
-</nav>
-
-<main class="main-content">
-        <div class="circle-choices">
-        <!-- BOTÃO EOL --> 
-        <div class="circleEol">
-            <a target="_blank" href="eol.html" class="Eol">
-                <span class="textEOL">EOL</span>
-            </a>
+    <header class="header">
+        <div class="header-content">
+            <img class="header-image" src="new_K-C_logo_blue-removebg-preview.png" alt="Logo">
+            <h1 class="title">Quadro Interativo FB-12</h1>
+            <a class="header-menu-item" target="_blank" href="https://kimberlyclark.sharepoint.com/Sites/H945/">Portal de Melhoria Continua</a>
         </div>
+        <div class="search-container">
+            <input type="text" id="searchInput" onkeyup="searchFunction()" placeholder="Pesquisar" class="search-input">
+        </div>
+        <button id="newItem">Novo Item</button>
+        <br>
+        <form id="itemForm">
+            <label for="itemName">Nome:</label>
+            <input type="text" id="itemName" required>
+            <label for="itemLink">Link:</label>
+            <input type="url" id="itemLink" required>
+            <label for="itemSetor">Setor:</label>
+            <select id="itemSetor" required>
+                <option value="EHS">EHS</option>
+                <option value="QUALIDADE">QUALIDADE</option>
+                <option value="PRODUTIVIDADE">PRODUTIVIDADE</option>
+                <option value="PESSOAS">PESSOAS</option>
+                <option value="CUSTOS">CUSTOS</option>
+            </select>
+            <button class="enviar" type="submit">Adicionar Item</button>
+        </form>
+    </header>
 
-    <!-- BOTÃO LINHA 6 -->
-    <div class="circleL6">
-        <a target="_blank" href="linha 6.html" class="linha6">
-            <span class="textL6">LINHA 6</span>
-        </a>
-    </div>
+    <main class="main-content">
+        <section class="main-section">
+            <div class="column ehs">
+                <a class="category">EHS</a>
+                <a target="_blank" href="https://kimberlyclark.sharepoint.com/:x:/r/Sites/H945/_layouts/15/Doc.aspx?sourcedoc=%7BE01E208F-07EB-4372-B22F-2C62BEB76984%7D&file=%C3%8DNDICE_PREVENTIVO_DE_SEGURAN%C3%87A_GERAL.xlsx&action=default&mobileredirect=true">
+                    <button class="button">IPS</button>
+                </a>
+                <a target="_blank" href="">
+                    <button class="button">Acompanhar Safe</button>
+                </a>
+                <a target="_blank" href="https://proact.kcc.com/Login.aspx?acc=kcc&auth=unpw">
+                    <button class="button">Lançar Safe</button>
+                </a>
+                <a target="_blank" href="https://kimberlyclark.sharepoint.com/Sites/H945/Suzano/Forms/AllItems.aspx?viewid=c20eff85%2Daf0a%2D4b76%2Dab1f%2D5816f085532c&id=%2FSites%2FH945%2FSuzano%2FSEGURAN%C3%87A%2FDialogo%20de%20Seguran%C3%A7a">
+                    <button class="button">DDS</button>
+                </a>
+                <a target="_blank" href="https://kimberlyclark.sharepoint.com/Sites/H945/Suzano/Forms/AllItems.aspx?id=%2FSites%2FH945%2FSuzano%2FQuadro%20Interativo%2FBCM%2FFB%2D12%2FFB12%2Epdf&viewid=c20eff85%2Daf0a%2D4b76%2Dab1f%2D5816f085532c&parent=%2FSites%2FH945%2FSuzano%2FQuadro%20Interativo%2FBCM%2FFB%2D12">
+                    <button class="button">Placard Lototo</button>
+                </a>
+                <a target="_blank" href="https://brsza022/PIVision/#/Displays/721/PFRA-BCM">
+                    <button class="button">PFRA Operadores</button>
+                </a>
+                <a target="_blank" href="https://kimberlyclark.sharepoint.com/sites/G394/SitePages/Inspe%C3%A7%C3%B5es-de-Pr%C3%A9-uso.aspx">
+                    <button class="button">Lançar Pré-Uso</button>
+                </a>
+                <a target="_blank" href="https://kimberlyclark.sharepoint.com/Sites/g956/optseguranca">
+                    <button class="button">Lançar OPT</button>
+                </a>
+            </div>
 
-    <!-- BOTÃO GZ -->
-    <div class="circleGZ">
-        <a target="_blank" href="GZ.html" class="Gz">
-            <span class="textGZ">GZ</span>
-        </a>
-    </div>
+            <div class="column qualidade">
+                <a class="category">QUALIDADE</a>
+                <a target="_blank" href="">
+                    <button class="button">Especificação de M.P</button>
+                </a>
+                <a target="_blank" href="https://brsza022/PIVision/#/Displays/712/Especificacao_Produto_BCM">
+                    <button class="button">Especificação de Produto</button>
+                </a>
+                <a target="_blank" href="https://brsza022/PIVision/#/Displays/711/Plano_de_Controle_BCM">
+                    <button class="button">Plano de Controle</button>
+                </a>
+                <a target="_blank" href="https://www.etq.kcc.com:443/RelianceProd/reliance?ETQ$CMD=CMD_OPEN_LATEST_REVISION_DOC&ETQ$APPLICATION_NAME=DOCWORK&ETQ$FORM_NAME=DOCWORK_DOCUMENT&ETQ$KEY_NAME=DOCWORK_ID&ETQ$KEY_VALUE=836437&ETQ$ORIGINAL_DOC_ID=347403">
+                    <button class="button">Manual de Inspeção</button>
+                </a>
+                <a target="_blank" href="http://www.etq.kcc.com:80/RelianceProd/reliance?ETQ$CMD=CMD_OPEN_LATEST_REVISION_DOC&ETQ$APPLICATION_NAME=DOCWORK&ETQ$FORM_NAME=DOCWORK_DOCUMENT&ETQ$KEY_NAME=DOCWORK_ID&ETQ$KEY_VALUE=752276&ETQ$ORIGINAL_DOC_ID=228451">
+                    <button class="button">Procedimento de Limpeza</button>
+                </a>
+                <a target="_blank" href="http://www.etq.kcc.com:80/RelianceProd/reliance?ETQ$CMD=CMD_OPEN_LATEST_REVISION_DOC&ETQ$APPLICATION_NAME=DOCWORK&ETQ$FORM_NAME=DOCWORK_DOCUMENT&ETQ$KEY_NAME=DOCWORK_ID&ETQ$KEY_VALUE=592489&ETQ$ORIGINAL_DOC_ID=89873">
+                    <button class="button">Manual de Reprocesso</button>
+                </a>
+                <a target="_blank" href="https://app.powerbi.com/groups/cfca818e-1113-48e2-bbd6-c682dd473fb8/reports/b1af17c7-3bb4-41e4-a36e-29b8cb94ce5f?ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737&pbi_source=linkShare">
+                    <button class="button">Consulta Ações SisAcr</button>
+                </a>
+                <a target="_blank" href="http://www.etq.kcc.com/RelianceProd/reliance?ETQ$CMD=CMD_OPEN_DOC&ETQ$APPLICATION_NAME=DOCWORK&ETQ$FORM_NAME=DOCWORK_DOCUMENT&ETQ$KEY_NAME=DOCWORK_ID&ETQ$KEY_VALUE=762848&ETQ$SCREEN_WIDTH=1536">
+                    <button class="button">Etiquetas de Fornecedores</button>
+                </a>
+            </div>
 
-</main>
+            <div class="column produtividade">
+                <a class="category">PRODUTIVIDADE</a>
+                <a target="_blank" href="">
+                    <button class="button">Quadro de Desempenho</button>
+                </a>
+                <a target="_blank" href="https://kimberlyclark.sharepoint.com/Sites/H945/Lists/Reunio%20Diria%20%20BCM/AllItems.aspx?useFiltersInViewXml=1&FilterField1=STATUS&FilterValue1=ANDAMENTO&FilterType1=Choice&FilterOp1=In&viewid=d8a9d722%2D2cf0%2D40ee%2D8cba%2D96622d53a9ba&FilterField2=MAQUINA&FilterValue2=FB%2D12&FilterType2=Choice&FilterOp2=In">
+                    <button class="button">Lançar Plano de Ação</button>
+                </a>
+                <a target="_blank" href="https://app.powerbi.com/groups/0055bf64-55e1-4c63-bc40-d734c7adcbbf/reports/1bfe30fd-e450-4a0d-a699-4149492f97a3?ctid=fee2180b-69b6-4afe-9f14-ccd70bd4c737&pbi_source=linkShare&bookmarkGuid=57806f42-26b6-4c58-b7a7-83dbe77c6971">
+                    <button class="button">Retenção Máquinas</button>
+                </a>
+                <a target="_blank" href="https://brsza022/PIVision/#/Displays/299/FB12---Overview">
+                    <button class="button">Acessar PI Vision</button>
+                </a>
+                <a target="_blank" href="https://kimberlyclark.sharepoint.com/sites/C83/Planos%20de%20Produo/Forms/AllItems.aspx?InitialTabId=Ribbon%2ERead&VisibilityContext=WSSTabPersistence">
+                    <button class="button">Plano de Produção</button>
+                </a>
+                <a target="_blank" href="https://brsza022/PIVision/#/Displays/633/AUTONOMOS-CARE-CART%25C3%2595ES">
+                    <button class="button">Autonomous Care</button>
+                </a>
+                <a target="_blank" href="">
+                    <button class="button">Instrução de Trabalho</button>
+                </a>
+                <a target="_blank" href="https://kimberlyclark.sharepoint.com/:x:/r/Sites/H945/_layouts/15/Doc.aspx?sourcedoc=%7BB8770DBD-619A-497E-BF0A-30270047FA80%7D&file=SOLU%C3%87%C3%83O%20DE%20PROBLEMA%20BCM.xlsx&action=default&mobileredirect=true">
+                    <button class="button">Solução de Problema</button>
+                </a>
+                <a target="_blank" href="https://kimberlyclark.sharepoint.com/:x:/r/Sites/H945/_layouts/15/Doc.aspx?sourcedoc=%7B90344E91-F85B-478E-AD5F-D7A99B7B71C7%7D&file=KPI%27s.xlsx&action=default&mobileredirect=true">
+                    <button class="button">KPI de Máquina</button>
+                </a>
+                <a target="_blank" href="https://l24427.github.io/MelhoriaContinua_Manutencao/">
+                    <button class="button">Manutenção</button>
+                </a>
+                <a target="_blank" href="https://app.powerbi.com/groups/0055bf64-55e1-4c63-bc40-d734c7adcbbf/reports/c88550a3-4103-4833-9e7e-376ef5d1868f/ReportSection7c344e23d1210edc0156?experience=power-bi">
+                    <button class="button">CI / TI</button>
+                </a>
+                <a target="_blank" href="https://brsza022/PIVision/#/Displays/1385/5S">
+                    <button class="button">5S</button>
+                </a>
+                <a target="_blank" href="https://app.powerbi.com/groups/cfca818e-1113-48e2-bbd6-c682dd473fb8/reports/6776a6e0-09f8-4f71-957c-f9b790782b31/ReportSection2e12a212b484179ca0da?experience=power-bi">
+                    <button class="button">Produção MES</button>
+                </a>
+            </div>
 
-<footer>
-    <img class="imgkc" src="kcc.png"/>
-    <a class="help">Fale conosco</a>
-</footer>
+            <div class="column pessoas">
+                <a class="category">PESSOAS</a>
+                <a target="_blank" href="http://www.etq.kcc.com:80/RelianceProd/reliance?ETQ$CMD=CMD_OPEN_LATEST_REVISION_DOC&ETQ$APPLICATION_NAME=DOCWORK&ETQ$FORM_NAME=DOCWORK_DOCUMENT&ETQ$KEY_NAME=DOCWORK_ID&ETQ$KEY_VALUE=660909&ETQ$ORIGINAL_DOC_ID=660149">
+                    <button class="button">Matriz Responsabilidade</button>
+                </a>
+                <a target="_blank" href="https://kimberlyclark.sharepoint.com/Sites/H945/Lists/Suzano%20%20Estrelas%20do%20Ms/AllItems.aspx">
+                    <button class="button">Reconhecer um Colega</button>
+                </a>
+                <a target="_blank" href="https://app.powerbi.com/groups/4a60522e-df17-40c3-afca-f699785afb5d/reports/fe555b92-4421-4a0d-9428-de4530812f7f/ReportSectionb11196832b5090b2e659">
+                    <button class="button">Treinamentos Planejados</button>
+                </a>
+                <a target="_blank" href="https://kimberlyclark.sharepoint.com/:x:/r/Sites/H945/Suzano/Quadro%20Interativo/ESCALA%202020-2028.xlsx?d=w069550dec2634102a6224d59a8b1bf23&csf=1&web=1&e=RJfGbC">
+                    <button class="button">Escala de Folga</button>
+                </a>
+                <a target="_blank" href="https://apps.powerapps.com/play/e/default-fee2180b-69b6-4afe-9f14-ccd70bd4c737/a/5498a537-9523-4485-8c12-e4b41fe9e227?tenantId=fee2180b-69b6-4afe-9f14-ccd70bd4c737&source=portal#">
+                    <button class="button">LSW</button>
+                </a>
+            </div>
 
+            <div class="column custos">
+                <a class="category">CUSTOS</a>
+                <a target="_blank" href="">
+                    <button class="button">Custo Waste</button>
+                </a>
+                <a target="_blank" href="">
+                    <button class="button">Other Waste</button>
+                </a>
+                <a target="_blank" href="">
+                    <button class="button">Consumo de MP</button>
+                </a>
+                <a target="_blank" href="">
+                    <button class="button">Conta 5301</button>
+                </a>
+                <a target="_blank" href="">
+                    <button class="button">Custo Prod x Consumo</button>
+                </a>
+            </div>
+
+            </section>
+
+            <script>
+                function removeSpecialChars(str) {
+            return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/[^\w\s]/gi, '').toUpperCase();
+        }
+
+        function searchFunction() {
+            var input, filter, buttons, text;
+            input = document.getElementById('searchInput');
+            filter = removeSpecialChars(input.value.trim());
+            buttons = document.getElementsByClassName('button');
+
+            for (var i = 0; i < buttons.length; i++) {
+                text = removeSpecialChars(buttons[i].textContent || buttons[i].innerText);
+                if (text.indexOf(filter) > -1) {
+                    buttons[i].style.display = "block";
+                } else {
+ buttons[i].style.display = "none";
+                }
+            }
+        }
+            </script>
+            <script src="script.js"></script>
+    </main>
 </body>
 
 </html>
